@@ -39,6 +39,8 @@ namespace KataCheckout
 
         public Checkout(IDictionary<string, Func<int, double>> rules)
         {
+            var totalPriceAt399 = NO_OFFER(3.99);
+            totalPriceAt399(2);
             _rules = rules;
         }
 
